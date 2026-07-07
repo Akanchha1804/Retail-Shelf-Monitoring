@@ -1,6 +1,6 @@
 // Phase 7/8 -- Live camera view: webcam capture + bounding box overlay
 
-const API_URL = "http://127.0.0.1:8000/detect_live";
+const API_URL = "https://retail-shelf-monitoring.onrender.com/detect_live";
 const CAPTURE_INTERVAL_MS = 1500; // send one frame roughly every 1.5s
 
 const video = document.getElementById("webcam");
@@ -27,9 +27,8 @@ async function startWebcam() {
     video.addEventListener("loadedmetadata", () => {
       canvas.width = video.videoWidth;
       canvas.height = video.videoHeight;
-      captureCanvas.width = video.videoWidth;
-      captureCanvas.height = video.videoHeight;
-
+      captureCanvas.width = 320;
+captureCanvas.height = 240;
       statusEl.textContent = "Webcam active. Detecting...";
       setInterval(captureAndDetect, CAPTURE_INTERVAL_MS);
     });
