@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment variables / secrets
+.env
+
+# YOLO training runs (large files)
+runs/
+
+# Model weights (large binary files -- optional, remove if you want to commit them)
+cv/weights/*.pt
+
+# Dataset (large, already documented how to regenerate)
+cv/data/sku110k/
+cv/data/sku110k_subset/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/

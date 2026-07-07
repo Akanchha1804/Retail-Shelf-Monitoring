@@ -1,0 +1,11 @@
+# Phase 2 -- YOLO dataset config
+# Points to the trimmed 400-image subset created by create_subset.py
+
+path: data/sku110k_subset   # relative to this file's location (cv/)
+train: train/images
+val: valid/images
+test: test/images
+
+# SKU-110K uses one generic class -- we're not distinguishing brands
+nc: 1
+names: ['product']

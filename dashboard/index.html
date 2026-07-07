@@ -1,0 +1,27 @@
+<!-- Phase 7/8 -- Live camera view with bounding boxes and live counts. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Retail Shelf Monitoring -- Live View</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Live Shelf Monitoring</h1>
+
+  <div id="container">
+    <video id="webcam" autoplay playsinline></video>
+    <canvas id="overlay"></canvas>
+  </div>
+
+  <div id="counts">
+    <div class="count-box" id="count-a">Shelf A: --</div>
+    <div class="count-box" id="count-b">Shelf B: --</div>
+    <div class="count-box" id="count-c">Shelf C: --</div>
+  </div>
+
+  <p id="status">Starting webcam...</p>
+
+  <script src="live_view.js"></script>
+</body>
+</html>

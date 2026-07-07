@@ -1,0 +1,54 @@
+/* Phase 7/8 -- Live camera view styling */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #1a1a1a;
+  color: #eee;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#container {
+  position: relative;
+  display: inline-block;
+}
+
+#webcam {
+  width: 640px;
+  height: 480px;
+  background: #000;
+  display: block;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+}
+
+#counts {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.count-box {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 18px;
+}
+
+#status {
+  margin-top: 15px;
+  color: #999;
+}
